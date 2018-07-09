@@ -1,5 +1,5 @@
 package com.kduda.functor
 
 object OptionFunctor extends Functor[Option] {
-  override def apply[A, B](f: A => B): Option[A] => Option[B] = optional => optional.map(f)
+  override def lift[A, B](f: A => B): Option[A] => Option[B] = optional => optional.map(f)
 }

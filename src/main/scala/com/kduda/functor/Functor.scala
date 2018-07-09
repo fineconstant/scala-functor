@@ -9,5 +9,7 @@ import scala.language.higherKinds
   * @tparam M Type constructor to create functor for
   */
 trait Functor[M[_]] {
-  def apply[A, B](f: A => B): M[A] => M[B]
+  def apply[A, B](f: A => B): M[A] => M[B] = lift(f)
+
+  def lift[A, B](f: A => B): M[A] => M[B]
 }
