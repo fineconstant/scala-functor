@@ -1,8 +1,5 @@
 package com.kduda.functor
 
-import scala.language.higherKinds
-
-
 /**
   * Creates a functor that is able to apply a function from A to B on given type
   *

@@ -1,6 +1,6 @@
 package com.kduda.functor
 
-import scala.language.{higherKinds, implicitConversions}
+import scala.language.implicitConversions
 
 
 object FunctorApp extends App {
